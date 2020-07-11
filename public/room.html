@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Muse | Editor</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-monokai.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nexusui@2.0.13/dist/NexusUI.min.js"></script>
+        <script src="https://unpkg.com/tone"></script>
+        <link rel="stylesheet" href="/home.css"/>
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="icon" href="/favicon.ico"/>
+    </head>
+    <body>
+        <input class="center" id="name" type="text" placeholder="What is your name?"/>
+        <button class="center" id="go">Go</button>
+        <div id="main" style="display: none">
+            <div id="top">
+                <button id="run">Run</button>
+                <button id="save">Save</button>
+                <p id="save-msg"></p>
+            </div>
+            <div id="chat">
+                <ul id="log"></ul>
+                <input id="msg" type="text" placeholder="Say something..."/>
+            </div>
+            <div id="graph"></div>
+            <div id="editor">// Welcome to Muse!
+// Go ahead and try it out!
+// Use the playNote function to play notes, for example:
+// playNote('A4');
+// You can also pass a duration:
+// playNote('A4', '8n');
+// Chords use the playChord function:
+// playChord(['A4', 'E4', 'G4', 'B4'], '8n');
+// Have fun and good luck!</div>
+        </div>
+        <script src="/room.js"></script>
+    </body>
+</html>

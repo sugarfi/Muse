@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+button, input {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+#top > button {
+    margin: 0;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+#top > #run {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 7%;
+    color: #ff0;
+    background-color: #444;
+    cursor: pointer;
+}
+
+#top > #run:hover {
+    background-color: #555;
+}
+
+#top > #save {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 7%;
+    color: #444;
+    background-color: #ff0;
+    cursor: pointer;
+}
+
+#top > #save:hover {
+    background-color: #ee0;
+}
+
+#top > #save-msg {
+    display: inline;
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 40%;
+    height: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#top > #save-msg > a {
+    color: #ff0;
+    text-decoration: none;
+}
+
+#top > #save-msg > a:hover {
+    text-decoration: underline;
+}
+
+#graph {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 50%;
+    height: 97%;
+}
+
+#editor {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 50%;
+    height: 97%;
+}
+
+#chat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 30%;
+    border: 1px solid white;
+    background-color: #222;
+    z-index: 2000;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+#chat > #log {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95%;
+    width: 90%;
+    color: #ff0;
+}
+
+#chat > #msg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 5%;
+    border: none;
+    outline: none;
+    border-radius: 0 0;
+    background: #333;
+    color: #ff0;
+    padding: 10px;
+}

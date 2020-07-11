@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@900&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    color: #ff0;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+:not(#editor) ::selection, :not(#editor)::-webkit-selection, :not(#editor)::-moz-selection {
+    color: #333;
+    background-color: #ff0;
+}
+
+input, button {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+h1 {
+    font-size: 96pt;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: #555 0px 1px 0px,
+                 #555 0px 2px 0px,
+                 #555 0px 3px 0px,
+                 #555 0px 4px 0px,
+                 #555 0px 5px 0px,
+                 #555 0px 6px 0px,
+                 #555 0px 7px 0px,
+                 #555 0px 8px 0px,
+                 #555 0px 9px 0px,
+                 #555 0px 10px 0px;
+}
+
+h2 {
+    font-size: 24pt;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+input[type=submit], button {
+    border: none;
+    outline: none;
+    height: 5vh;
+    color: #444;
+    background-color: #ff0;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+    height: 5vh;
+    width: 20%;
+    color: #ff0;
+    padding: 1vh;
+    background-color: #444;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: #ff0;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
